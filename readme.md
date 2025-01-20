@@ -13,6 +13,7 @@ Projeto criado para demonstração de funcionalidade da transferência de sessã
 1. Comando para instalação do projeto: `npm i `
 2. Comando para executar o projeto: `npm start `
 
+
 Com isso, será disponibilidada uma página html no endereço "http://localhost:3000".
 
 ## Requisitos

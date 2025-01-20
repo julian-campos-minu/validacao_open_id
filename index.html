@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Site Institucional</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #00A859;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Barra de navegação */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Seções principais */
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x700/00A859/fff?text=Empresa');
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        .service-card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: #00A859;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Empresa</h1>
+        <p>Inovando e crescendo com soluções inteligentes</p>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#" onclick="enviar()">Clube</a>
+    </nav>
+
+    <!-- Seção de Hero -->
+    <section class="hero" id="home">
+        <h2>Transforme o Futuro da Sua Empresa com Nossa Solução</h2>
+        <p>Saiba mais sobre como podemos ajudar a sua empresa a crescer.</p>
+        <a href="#servicos" style="background-color: #00A859; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px;">Nossos Serviços</a>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="services" id="servicos">
+        <div class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Consultoria Estratégica</h3>
+            <p>Melhore a performance da sua empresa com nossas soluções personalizadas.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Gestão de Processos</h3>
+            <p>Otimize processos para aumentar a eficiência e a rentabilidade.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-users"></i>
+            <h3>Treinamento de Equipes</h3>
+            <p>Desenvolva as habilidades da sua equipe para alcançar novos resultados.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 Nome da Empresa | Todos os direitos reservados</p>
+        <p><a href="mailto:contato@empresa.com">contato@empresa.com</a> | <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+</body>
+</html>
